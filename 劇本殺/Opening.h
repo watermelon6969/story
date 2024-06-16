@@ -2,6 +2,7 @@
 #define OPENING_H
 
 #include "Scene.h"
+using namespace std;
 
 class Opening {
 public:
@@ -21,7 +22,7 @@ private:
     static void HandleOutSubChoice(int);
     static void HandlePeopleSubChoice(int);
 
-    static std::string treasureItem;
+    static string treasureItem;
 };
 
 #endif // OPENING_H
