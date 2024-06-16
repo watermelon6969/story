@@ -7,19 +7,19 @@ using namespace std;
 std::string Opening::treasureItem = "";
 
 void Opening::SceneOP(Scene& scene) {
-    cout << "¤@­Ó³±«B³sºøªº±ß¤W¡A§A¬°¤F­n¸ú«B¨Ó¨ì¤@®y¦ì©ó°¾»÷¤s¯ßªº¯«¯µ²ø¶é" << endl;
+    cout << "\nä¸€å€‹é™°é›¨é€£ç¶¿çš„æ™šä¸Šï¼Œä½ ç‚ºäº†è¦èº²é›¨ä¾†åˆ°ä¸€åº§ä½æ–¼ååƒ»å±±è„ˆçš„ç¥žç§˜èŽŠåœ’" << endl;
     Sleep(2000);
-    cout << "³o®yÉÜ¶é¾Ú»¡´¿¬O¤@¦ì´I¦³ªºÃÀ³N®aªº©~©Ò¡A¦ý¦b¤@³õ¤j¤õ«áÅÜ±o¯î¼o......" << endl;
+    cout << "é€™åº§åº„åœ’æ“šèªªæ›¾æ˜¯ä¸€ä½å¯Œæœ‰çš„è—è¡“å®¶çš„å±…æ‰€ï¼Œä½†åœ¨ä¸€å ´å¤§ç«å¾Œè®Šå¾—è’å»¢......" << endl;
     Sleep(2000);
-    cout << "§A±À¶}ÉÜ¶éªº¤jªù¡Aµo²{¸Ì­±³ºµM¿O¤õ³q©ú¡A§Ï©»¦³¤H¦b¸Ì­±µ¥µÛ§A" << endl;
+    cout << "ä½ æŽ¨é–‹åº„åœ’çš„å¤§é–€ï¼Œç™¼ç¾è£¡é¢ç«Ÿç„¶ç‡ˆç«é€šæ˜Žï¼Œå½·å½¿æœ‰äººåœ¨è£¡é¢ç­‰è‘—ä½ " << endl;
     Sleep(2000);
-    cout << "§A·P¨ì¤@µ·¤£¦w¡A¦ýÁÙ¬O¨«¤F¶i¥h......\n" << endl;
+    cout << "ä½ æ„Ÿåˆ°ä¸€çµ²ä¸å®‰ï¼Œä½†é‚„æ˜¯èµ°äº†é€²åŽ»......\n" << endl;
     Sleep(2000);
-    cout << "±z¦n, " << scene.getName() << "!" << endl;
-    cout << "¨«¶i¤jªù«á¡A§A¦³¤T­Ó¿ï¶µ" << endl;
-    cout << "1. ±´¯Á²ø¶é" << endl;
-    cout << "2. ±´¯Á¥~³¡" << endl;
-    cout << "3. ¸ß°Ý¸ô¤H" << endl;
+    cout << "æ‚¨å¥½, " << scene.getName() << "!" << endl;
+    cout << "èµ°é€²å¤§é–€å¾Œï¼Œä½ æœ‰ä¸‰å€‹é¸é …" << endl;
+    cout << "1. æŽ¢ç´¢èŽŠåœ’" << endl;
+    cout << "2. æŽ¢ç´¢å¤–éƒ¨" << endl;
+    cout << "3. è©¢å•è·¯äºº" << endl;
 }
 
 void Opening::SceneO(int i) {
@@ -27,19 +27,19 @@ void Opening::SceneO(int i) {
     while (!failChoose) {
         switch (i) {
         case 1:
-            cout << "±z¿ï¾Ü ±´¯Á²ø¶é" << endl;
+            cout << "æ‚¨é¸æ“‡ æŽ¢ç´¢èŽŠåœ’" << endl;
             failChoose = true;
             break;
         case 2:
-            cout << "±z¿ï¾Ü ±´¯Á¥~³¡" << endl;
+            cout << "æ‚¨é¸æ“‡ æŽ¢ç´¢å¤–éƒ¨" << endl;
             failChoose = true;
             break;
         case 3:
-            cout << "±z¿ï¾Ü ¸ß°Ý¸ô¤H" << endl;
+            cout << "æ‚¨é¸æ“‡ è©¢å•è·¯äºº" << endl;
             failChoose = true;
             break;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> i;
             break;
         }
@@ -48,10 +48,10 @@ void Opening::SceneO(int i) {
 
 void Opening::SceneHouse() {
     int choice;
-    cout << "¶i¤J²ø¶é«á¡A¦L¤J²´Ã®ªº¬O¶W¤jªº«ÈÆU" << endl;
-    cout << "1. ¬d¬Ý¾ÀÄl" << endl;
-    cout << "2. Æ[¹îÀð¤Wªºµe§@" << endl;
-    cout << "3. ÀË¬d®Ñ¬[ªº®Ñ" << endl;
+    cout << "\né€²å…¥èŽŠåœ’å¾Œï¼Œå°å…¥çœ¼ç°¾çš„æ˜¯è¶…å¤§çš„å®¢å»³" << endl;
+    cout << "1. æŸ¥çœ‹å£çˆ" << endl;
+    cout << "2. è§€å¯Ÿç‰†ä¸Šçš„ç•«ä½œ" << endl;
+    cout << "3. æª¢æŸ¥æ›¸æž¶çš„æ›¸" << endl;
     cin >> choice;
     SceneHouseChoice(choice);
 }
@@ -59,31 +59,31 @@ void Opening::SceneHouse() {
 void Opening::SceneHouseChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "§A¨«¦V¾ÀÄl¡Aµo²{¸Ì­±¦³¤@­Ó¯µ±K³q¹D¡C" << endl;
-        cout << "1. ¶i¤J¯µ±K³q¹D" << endl;
-        cout << "2. Ä~Äò±´¯Á«ÈÆU" << endl;
-        cout << "3. ¥s¨ÓªB¤ÍÀ°¦£" << endl;
+        cout << "\nä½ èµ°å‘å£çˆï¼Œç™¼ç¾è£¡é¢æœ‰ä¸€å€‹ç§˜å¯†é€šé“ã€‚" << endl;
+        cout << "1. é€²å…¥ç§˜å¯†é€šé“" << endl;
+        cout << "2. ç¹¼çºŒæŽ¢ç´¢å®¢å»³" << endl;
+        cout << "3. å«ä¾†æœ‹å‹å¹«å¿™" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
     case 2:
-        cout << "§Aµo²{¤@´Tµe§@«á­±ÂÃµÛ¤@­ÓÆ_°Í¡C" << endl;
-        cout << "1. ®³¨«Æ_°Í" << endl;
-        cout << "2. ´M§äÆ_°Í¤Õ" << endl;
-        cout << "3. Ä~ÄòÆ[¹î¨ä¥Lµe§@" << endl;
+        cout << "\nä½ ç™¼ç¾ä¸€å¹…ç•«ä½œå¾Œé¢è—è‘—ä¸€å€‹é‘°åŒ™ã€‚" << endl;
+        cout << "1. æ‹¿èµ°é‘°åŒ™" << endl;
+        cout << "2. å°‹æ‰¾é‘°åŒ™å­”" << endl;
+        cout << "3. ç¹¼çºŒè§€å¯Ÿå…¶ä»–ç•«ä½œ" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
     case 3:
-        cout << "§A§ä¨ì¤@¥»Ãö©óÉÜ¶é¾ú¥vªº®Ñ¡C" << endl;
-        cout << "1. ¾\Åª®ÑÄy" << endl;
-        cout << "2. ±N®Ñ±a¨«" << endl;
-        cout << "3. ©ñ¦^®Ñ¬[" << endl;
+        cout << "\nä½ æ‰¾åˆ°ä¸€æœ¬é—œæ–¼åº„åœ’æ­·å²çš„æ›¸ã€‚" << endl;
+        cout << "1. é–±è®€æ›¸ç±" << endl;
+        cout << "2. å°‡æ›¸å¸¶èµ°" << endl;
+        cout << "3. æ”¾å›žæ›¸æž¶" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         SceneHouseChoice(choice);
         break;
@@ -93,50 +93,50 @@ void Opening::SceneHouseChoice(int choice) {
 void Opening::HandleHouseSubChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "§A¶i¤J³q¹D¡Aµo²{¤@­ÓÁôÂÃªº©Ð¶¡¡A¸Ì­±¦³¤@­ÓÄ_½c¡C" << endl;
-        cout << "1. ¥´¶}Ä_½c" << endl;
-        cout << "2. ÀË¬d©Ð¶¡" << endl;
-        cout << "3. ªð¦^«ÈÆU" << endl;
+        cout << "\nä½ é€²å…¥é€šé“ï¼Œç™¼ç¾ä¸€å€‹éš±è—çš„æˆ¿é–“ï¼Œè£¡é¢æœ‰ä¸€å€‹å¯¶ç®±ã€‚" << endl;
+        cout << "1. æ‰“é–‹å¯¶ç®±" << endl;
+        cout << "2. æª¢æŸ¥æˆ¿é–“" << endl;
+        cout << "3. è¿”å›žå®¢å»³" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A¥´¶}Ä_½c¡Aµo²{¸Ì­±¦³¤@­Ó¯«¯µªºÄ_¥Û¡C" << endl;
-            treasureItem = "¯«¯µªºÄ_¥Û";
-            cout << "§AÀò±o¤F¤@­Ó " << treasureItem << "¡C" << endl;
+            cout << "\nä½ æ‰“é–‹å¯¶ç®±ï¼Œç™¼ç¾è£¡é¢æœ‰ä¸€å€‹ç¥žç§˜çš„å¯¶çŸ³ã€‚" << endl;
+            treasureItem = "ç¥žç§˜çš„å¯¶çŸ³";
+            cout << "ä½ ç²å¾—äº†ä¸€å€‹ " << treasureItem << "ã€‚" << endl;
             Conclusion();
             return;
         case 2:
-            cout << "§AÀË¬d©Ð¶¡¡A¦ý¨S¦³µo²{¨ä¥L¦³»ù­ÈªºªF¦è¡C" << endl;
+            cout << "\nä½ æª¢æŸ¥æˆ¿é–“ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–æœ‰åƒ¹å€¼çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
             SceneHouse();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandleHouseSubChoice(choice);
             return;
         }
         break;
     case 2:
-        cout << "§Aµo²{¤@´Tµe§@«á­±ÂÃµÛ¤@­ÓÆ_°Í¡C" << endl;
-        cout << "1. ®³¨«Æ_°Í" << endl;
-        cout << "2. ´M§äÆ_°Í¤Õ" << endl;
-        cout << "3. Ä~ÄòÆ[¹î¨ä¥Lµe§@" << endl;
+        cout << "\nä½ ç™¼ç¾ä¸€å¹…ç•«ä½œå¾Œé¢è—è‘—ä¸€å€‹é‘°åŒ™ã€‚" << endl;
+        cout << "1. æ‹¿èµ°é‘°åŒ™" << endl;
+        cout << "2. å°‹æ‰¾é‘°åŒ™å­”" << endl;
+        cout << "3. ç¹¼çºŒè§€å¯Ÿå…¶ä»–ç•«ä½œ" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
     case 3:
-        cout << "§A§ä¨ì¤@¥»Ãö©óÉÜ¶é¾ú¥vªº®Ñ¡C" << endl;
-        cout << "1. ¾\Åª®ÑÄy" << endl;
-        cout << "2. ±N®Ñ±a¨«" << endl;
-        cout << "3. ©ñ¦^®Ñ¬[" << endl;
+        cout << "\nä½ æ‰¾åˆ°ä¸€æœ¬é—œæ–¼åº„åœ’æ­·å²çš„æ›¸ã€‚" << endl;
+        cout << "1. é–±è®€æ›¸ç±" << endl;
+        cout << "2. å°‡æ›¸å¸¶èµ°" << endl;
+        cout << "3. æ”¾å›žæ›¸æž¶" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         HandleHouseSubChoice(choice);
         break;
@@ -145,10 +145,10 @@ void Opening::HandleHouseSubChoice(int choice) {
 
 void Opening::SceneOut() {
     int choice;
-    cout << "§A¨M©w¦b«B¤¤±´¯Á²ø¶éªºªá¶é" << endl;
-    cout << "1. ÀË¬d·Å«Ç" << endl;
-    cout << "2. ÀË¬dÀJ¹³" << endl;
-    cout << "3. ±´¯Á°g®cªá¶é" << endl;
+    cout << "\nä½ æ±ºå®šåœ¨é›¨ä¸­æŽ¢ç´¢èŽŠåœ’çš„èŠ±åœ’" << endl;
+    cout << "1. æª¢æŸ¥æº«å®¤" << endl;
+    cout << "2. æª¢æŸ¥é›•åƒ" << endl;
+    cout << "3. æŽ¢ç´¢è¿·å®®èŠ±åœ’" << endl;
     cin >> choice;
     SceneOutChoice(choice);
 }
@@ -156,31 +156,31 @@ void Opening::SceneOut() {
 void Opening::SceneOutChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "§Aµo²{·Å«Ç¸Ì¦³¤@¨Ç©_²§ªº´Óª«¡C" << endl;
-        cout << "1. ¬ã¨s´Óª«" << endl;
-        cout << "2. Ä~Äò±´¯Á·Å«Ç" << endl;
-        cout << "3. ®³¨«¤@®è´Óª«" << endl;
+        cout << "\nä½ ç™¼ç¾æº«å®¤è£¡æœ‰ä¸€äº›å¥‡ç•°çš„æ¤ç‰©ã€‚" << endl;
+        cout << "1. ç ”ç©¶æ¤ç‰©" << endl;
+        cout << "2. ç¹¼çºŒæŽ¢ç´¢æº«å®¤" << endl;
+        cout << "3. æ‹¿èµ°ä¸€æ ªæ¤ç‰©" << endl;
         cin >> choice;
         HandleOutSubChoice(choice);
         break;
     case 2:
-        cout << "§Aµo²{ÀJ¹³©³®y¤W¦³¤@­ÓÁôÂÃªº¾÷Ãö¡C" << endl;
-        cout << "1. Ä²°Ê¾÷Ãö" << endl;
-        cout << "2. Ä~ÄòÆ[¹îÀJ¹³" << endl;
-        cout << "3. ´M§ä¨ä¥LÀJ¹³" << endl;
+        cout << "\nä½ ç™¼ç¾é›•åƒåº•åº§ä¸Šæœ‰ä¸€å€‹éš±è—çš„æ©Ÿé—œã€‚" << endl;
+        cout << "1. è§¸å‹•æ©Ÿé—œ" << endl;
+        cout << "2. ç¹¼çºŒè§€å¯Ÿé›•åƒ" << endl;
+        cout << "3. å°‹æ‰¾å…¶ä»–é›•åƒ" << endl;
         cin >> choice;
         HandleOutSubChoice(choice);
         break;
     case 3:
-        cout << "§A¦b°g®c¤¤°g¸ô¡Aµo²{¤F¤@­ÓÁôÂÃªº¦a¤U¤J¤f¡C" << endl;
-        cout << "1. ¶i¤J¦a¤U¤J¤f" << endl;
-        cout << "2. ¹Á¸Õ§ä¨ì¥X¤f" << endl;
-        cout << "3. ´M¨DÀ°§U" << endl;
+        cout << "\nä½ åœ¨è¿·å®®ä¸­è¿·è·¯ï¼Œç™¼ç¾äº†ä¸€å€‹éš±è—çš„åœ°ä¸‹å…¥å£ã€‚" << endl;
+        cout << "1. é€²å…¥åœ°ä¸‹å…¥å£" << endl;
+        cout << "2. å˜—è©¦æ‰¾åˆ°å‡ºå£" << endl;
+        cout << "3. å°‹æ±‚å¹«åŠ©" << endl;
         cin >> choice;
         HandleOutSubChoice(choice);
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         SceneOutChoice(choice);
         break;
@@ -190,103 +190,103 @@ void Opening::SceneOutChoice(int choice) {
 void Opening::HandleOutSubChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "§Aµo²{´Óª«¦³ªvÀøªº®ÄªG¡A¨Ã§ä¨ì¤F¤@¥»¥j¦Ñªºµ§°O¥»¡C" << endl;
-        cout << "1. ±a¨«µ§°O¥»" << endl;
-        cout << "2. Ä~Äò¬ã¨s´Óª«" << endl;
-        cout << "3. ªð¦^ÉÜ¶é¤º³¡" << endl;
+        cout << "\nä½ ç™¼ç¾æ¤ç‰©æœ‰æ²»ç™‚çš„æ•ˆæžœï¼Œä¸¦æ‰¾åˆ°äº†ä¸€æœ¬å¤è€çš„ç­†è¨˜æœ¬ã€‚" << endl;
+        cout << "1. å¸¶èµ°ç­†è¨˜æœ¬" << endl;
+        cout << "2. ç¹¼çºŒç ”ç©¶æ¤ç‰©" << endl;
+        cout << "3. è¿”å›žåº„åœ’å…§éƒ¨" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A±a¨«¤Fµ§°O¥»¡C" << endl;
+            cout << "\nä½ å¸¶èµ°äº†ç­†è¨˜æœ¬ã€‚" << endl;
             Conclusion();
             return;
         case 2:
-            cout << "§AÄ~Äò¬ã¨s´Óª«¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+            cout << "\nä½ ç¹¼çºŒç ”ç©¶æ¤ç‰©ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
             SceneHouse();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandleOutSubChoice(choice);
             return;
         }
         break;
     case 2:
-        cout << "§Aµo²{¤F¤@±ø³q©¹¦a¤U«Çªº¯µ±K³q¹D¡C" << endl;
-        cout << "1. ¶i¤J¦a¤U«Ç" << endl;
-        cout << "2. Ä~ÄòÆ[¹î©P³ò" << endl;
-        cout << "3. ªð¦^ÉÜ¶é¤º³¡" << endl;
+        cout << "\nä½ ç™¼ç¾äº†ä¸€æ¢é€šå¾€åœ°ä¸‹å®¤çš„ç§˜å¯†é€šé“ã€‚" << endl;
+        cout << "1. é€²å…¥åœ°ä¸‹å®¤" << endl;
+        cout << "2. ç¹¼çºŒè§€å¯Ÿå‘¨åœ" << endl;
+        cout << "3. è¿”å›žåº„åœ’å…§éƒ¨" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A¶i¤J¦a¤U«Ç¡Aµo²{¤F¤@­ÓÄ_ÂÃ¡C" << endl;
-            cout << "1. ¥´¶}Ä_ÂÃ" << endl;
-            cout << "2. Ä~Äò±´¯Á¦a¤U«Ç" << endl;
-            cout << "3. ªð¦^¦a­±" << endl;
+            cout << "\nä½ é€²å…¥åœ°ä¸‹å®¤ï¼Œç™¼ç¾äº†ä¸€å€‹å¯¶è—ã€‚" << endl;
+            cout << "1. æ‰“é–‹å¯¶è—" << endl;
+            cout << "2. ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤" << endl;
+            cout << "3. è¿”å›žåœ°é¢" << endl;
             cin >> choice;
             switch (choice) {
             case 1:
-                cout << "§A¥´¶}Ä_ÂÃ¡Aµo²{¤F¤@­Ó¥j¦Ñªº¤â½Z¡C" << endl;
+                cout << "\nä½ æ‰“é–‹å¯¶è—ï¼Œç™¼ç¾äº†ä¸€å€‹å¤è€çš„æ‰‹ç¨¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 2:
-                cout << "§AÄ~Äò±´¯Á¦a¤U«Ç¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+                cout << "\nä½ ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 3:
                 SceneHouse();
                 return;
             default:
-                cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+                cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
                 cin >> choice;
                 HandleOutSubChoice(choice);
                 return;
             }
             break;
         case 2:
-            cout << "§AÄ~ÄòÆ[¹î©P³ò¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+            cout << "\nä½ ç¹¼çºŒè§€å¯Ÿå‘¨åœï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
             SceneHouse();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandleOutSubChoice(choice);
             return;
         }
         break;
     case 3:
-        cout << "§Aµo²{¤@­Ó¥j¦ÑªºÄ_ÂÃÂÃ¦b¦a¤U«Ç¡C" << endl;
-        cout << "1. ¥´¶}Ä_ÂÃ" << endl;
-        cout << "2. Ä~Äò±´¯Á¦a¤U«Ç" << endl;
-        cout << "3. ªð¦^¦a­±" << endl;
+        cout << "\nä½ ç™¼ç¾ä¸€å€‹å¤è€çš„å¯¶è—è—åœ¨åœ°ä¸‹å®¤ã€‚" << endl;
+        cout << "1. æ‰“é–‹å¯¶è—" << endl;
+        cout << "2. ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤" << endl;
+        cout << "3. è¿”å›žåœ°é¢" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A¥´¶}Ä_ÂÃ¡Aµo²{¤F¤@­Ó¥j¦Ñªº¤â½Z¡C" << endl;
+            cout << "\nä½ æ‰“é–‹å¯¶è—ï¼Œç™¼ç¾äº†ä¸€å€‹å¤è€çš„æ‰‹ç¨¿ã€‚" << endl;
             Conclusion();
             return;
         case 2:
-            cout << "§AÄ~Äò±´¯Á¦a¤U«Ç¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+            cout << "\nä½ ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
             SceneOut();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandleOutSubChoice(choice);
             return;
         }
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         HandleOutSubChoice(choice);
         break;
@@ -295,10 +295,10 @@ void Opening::HandleOutSubChoice(int choice) {
 
 void Opening::ScenePeople() {
     int choice;
-    cout << "§A¦b²ø¶é¤¤¹J¨ì¤F¤@­Ó¯«¯µªº¦u½Ã" << endl;
-    cout << "1. °Ý¥L¦³ÃöÉÜ¶éªº¨Æ" << endl;
-    cout << "2. ¹Á¸Õ»¡ªA¥LÅý§A¶i¤J§ó¦h©Ð¶¡" << endl;
-    cout << "3. ¸òÀH¦u½Ã" << endl;
+    cout << "\nä½ åœ¨èŽŠåœ’ä¸­é‡åˆ°äº†ä¸€å€‹ç¥žç§˜çš„å®ˆè¡›" << endl;
+    cout << "1. å•ä»–æœ‰é—œåº„åœ’çš„äº‹" << endl;
+    cout << "2. å˜—è©¦èªªæœä»–è®“ä½ é€²å…¥æ›´å¤šæˆ¿é–“" << endl;
+    cout << "3. è·Ÿéš¨å®ˆè¡›" << endl;
     cin >> choice;
     ScenePeopleChoice(choice);
 }
@@ -306,31 +306,31 @@ void Opening::ScenePeople() {
 void Opening::ScenePeopleChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "¦u½Ã§i¶D§AÉÜ¶éªº¥D¤H´¿¸gÂÃ¦³¤@µ§¥¨ÃB°]´I¡C" << endl;
-        cout << "1. ¸ß°Ý°]´Iªº¨ãÅé¦ì¸m" << endl;
-        cout << "2. ¸ß°ÝÉÜ¶é¾ú¥v" << endl;
-        cout << "3. ¦V¦u½Ã´M¨DÀ°§U" << endl;
+        cout << "\nå®ˆè¡›å‘Šè¨´ä½ åº„åœ’çš„ä¸»äººæ›¾ç¶“è—æœ‰ä¸€ç­†å·¨é¡è²¡å¯Œã€‚" << endl;
+        cout << "1. è©¢å•è²¡å¯Œçš„å…·é«”ä½ç½®" << endl;
+        cout << "2. è©¢å•åº„åœ’æ­·å²" << endl;
+        cout << "3. å‘å®ˆè¡›å°‹æ±‚å¹«åŠ©" << endl;
         cin >> choice;
         HandlePeopleSubChoice(choice);
         break;
     case 2:
-        cout << "¦u½Ã³Q»¡ªA¡Aµ¹§A¤@§âÆ_°Í¡C" << endl;
-        cout << "1. ¨Ï¥ÎÆ_°Í" << endl;
-        cout << "2. «O¦sÆ_°Í" << endl;
-        cout << "3. Åý¦u½Ã³­¦P" << endl;
+        cout << "\nå®ˆè¡›è¢«èªªæœï¼Œçµ¦ä½ ä¸€æŠŠé‘°åŒ™ã€‚" << endl;
+        cout << "1. ä½¿ç”¨é‘°åŒ™" << endl;
+        cout << "2. ä¿å­˜é‘°åŒ™" << endl;
+        cout << "3. è®“å®ˆè¡›é™ªåŒ" << endl;
         cin >> choice;
         HandlePeopleSubChoice(choice);
         break;
     case 3:
-        cout << "¦u½Ã±a§A¶i¤J¤@­Ó¯µ±K©Ð¶¡¡C" << endl;
-        cout << "1. Æ[¹î©Ð¶¡" << endl;
-        cout << "2. ¸ß°Ý¦u½Ã" << endl;
-        cout << "3. ·j¯Á©Ð¶¡" << endl;
+        cout << "\nå®ˆè¡›å¸¶ä½ é€²å…¥ä¸€å€‹ç§˜å¯†æˆ¿é–“ã€‚" << endl;
+        cout << "1. è§€å¯Ÿæˆ¿é–“" << endl;
+        cout << "2. è©¢å•å®ˆè¡›" << endl;
+        cout << "3. æœç´¢æˆ¿é–“" << endl;
         cin >> choice;
         HandlePeopleSubChoice(choice);
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         ScenePeopleChoice(choice);
         break;
@@ -340,126 +340,126 @@ void Opening::ScenePeopleChoice(int choice) {
 void Opening::HandlePeopleSubChoice(int choice) {
     switch (choice) {
     case 1:
-        cout << "¦u½Ã§i¶D§A°]´IÂÃ¦b¦a¤U«Çªº¤@­ÓÄ_½c¸Ì¡C" << endl;
-        cout << "1. «e©¹¦a¤U«Ç" << endl;
-        cout << "2. Ä~Äò»P¦u½Ã¥æ½Í" << endl;
-        cout << "3. Åý¦u½Ã±a¸ô" << endl;
+        cout << "\nå®ˆè¡›å‘Šè¨´ä½ è²¡å¯Œè—åœ¨åœ°ä¸‹å®¤çš„ä¸€å€‹å¯¶ç®±è£¡ã€‚" << endl;
+        cout << "1. å‰å¾€åœ°ä¸‹å®¤" << endl;
+        cout << "2. ç¹¼çºŒèˆ‡å®ˆè¡›äº¤è«‡" << endl;
+        cout << "3. è®“å®ˆè¡›å¸¶è·¯" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A«e©¹¦a¤U«Ç¡Aµo²{¤F¤@­ÓÄ_ÂÃ¡C" << endl;
-            cout << "1. ¥´¶}Ä_ÂÃ" << endl;
-            cout << "2. Ä~Äò±´¯Á¦a¤U«Ç" << endl;
-            cout << "3. ªð¦^¦a­±" << endl;
+            cout << "\nä½ å‰å¾€åœ°ä¸‹å®¤ï¼Œç™¼ç¾äº†ä¸€å€‹å¯¶è—ã€‚" << endl;
+            cout << "1. æ‰“é–‹å¯¶è—" << endl;
+            cout << "2. ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤" << endl;
+            cout << "3. è¿”å›žåœ°é¢" << endl;
             cin >> choice;
             switch (choice) {
             case 1:
-                cout << "§A¥´¶}Ä_ÂÃ¡Aµo²{¤F¤@­Ó¥j¦Ñªº¤â½Z¡C" << endl;
+                cout << "\nä½ æ‰“é–‹å¯¶è—ï¼Œç™¼ç¾äº†ä¸€å€‹å¤è€çš„æ‰‹ç¨¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 2:
-                cout << "§AÄ~Äò±´¯Á¦a¤U«Ç¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+                cout << "\nä½ ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 3:
                 SceneHouse();
                 return;
             default:
-                cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+                cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
                 cin >> choice;
                 HandlePeopleSubChoice(choice);
                 return;
             }
             break;
         case 2:
-            cout << "§AÄ~Äò»P¦u½Ã¥æ½Í¡A¦ý¥L¦ü¥G¤£Ä@¦h»¡¡C" << endl;
+            cout << "\nä½ ç¹¼çºŒèˆ‡å®ˆè¡›äº¤è«‡ï¼Œä½†ä»–ä¼¼ä¹Žä¸é¡˜å¤šèªªã€‚" << endl;
             Conclusion();
             return;
         case 3:
-            cout << "¦u½Ã±a§A«e©¹¦a¤U«Ç¡Aµo²{¤F¤@­ÓÄ_ÂÃ¡C" << endl;
-            cout << "1. ¥´¶}Ä_ÂÃ" << endl;
-            cout << "2. Ä~Äò±´¯Á¦a¤U«Ç" << endl;
-            cout << "3. ªð¦^¦a­±" << endl;
+            cout << "\nå®ˆè¡›å¸¶ä½ å‰å¾€åœ°ä¸‹å®¤ï¼Œç™¼ç¾äº†ä¸€å€‹å¯¶è—ã€‚" << endl;
+            cout << "1. æ‰“é–‹å¯¶è—" << endl;
+            cout << "2. ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤" << endl;
+            cout << "3. è¿”å›žåœ°é¢" << endl;
             cin >> choice;
             switch (choice) {
             case 1:
-                cout << "§A¥´¶}Ä_ÂÃ¡Aµo²{¤F¤@­Ó¥j¦Ñªº¤â½Z¡C" << endl;
+                cout << "\nä½ æ‰“é–‹å¯¶è—ï¼Œç™¼ç¾äº†ä¸€å€‹å¤è€çš„æ‰‹ç¨¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 2:
-                cout << "§AÄ~Äò±´¯Á¦a¤U«Ç¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+                cout << "\nä½ ç¹¼çºŒæŽ¢ç´¢åœ°ä¸‹å®¤ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
                 Conclusion();
                 return;
             case 3:
                 SceneHouse();
                 return;
             default:
-                cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+                cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
                 cin >> choice;
                 HandlePeopleSubChoice(choice);
                 return;
             }
             break;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandlePeopleSubChoice(choice);
             return;
         }
         break;
     case 2:
-        cout << "§A¥´¶}¤@­Ó¯µ±K©Ð¶¡¡A¸Ì­±¦³¤@­Ó¯«¯µªº½c¤l¡C" << endl;
-        cout << "1. ¥´¶}½c¤l" << endl;
-        cout << "2. ÀË¬d©P³ò" << endl;
-        cout << "3. ªð¦^ÉÜ¶é¤jÆU" << endl;
+        cout << "\nä½ æ‰“é–‹ä¸€å€‹ç§˜å¯†æˆ¿é–“ï¼Œè£¡é¢æœ‰ä¸€å€‹ç¥žç§˜çš„ç®±å­ã€‚" << endl;
+        cout << "1. æ‰“é–‹ç®±å­" << endl;
+        cout << "2. æª¢æŸ¥å‘¨åœ" << endl;
+        cout << "3. è¿”å›žåº„åœ’å¤§å»³" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A¥´¶}½c¤l¡Aµo²{¤F¤@­Ó¥j¦Ñªº¤â½Z¡C" << endl;
+            cout << "\nä½ æ‰“é–‹ç®±å­ï¼Œç™¼ç¾äº†ä¸€å€‹å¤è€çš„æ‰‹ç¨¿ã€‚" << endl;
             Conclusion();
             return;
         case 2:
-            cout << "§AÀË¬d©P³ò¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+            cout << "\nä½ æª¢æŸ¥å‘¨åœï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
             SceneHouse();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandlePeopleSubChoice(choice);
             return;
         }
         break;
     case 3:
-        cout << "§Aµo²{©Ð¶¡¸Ì¦³¤@´Tµe¡Aµe¤¤¦ü¥GÁôÂÃµÛ¬Y¨Ç«H®§¡C" << endl;
-        cout << "1. ¥J²Ó¬ã¨sµe§@" << endl;
-        cout << "2. ÀË¬d¨ä¥Lª««~" << endl;
-        cout << "3. ¸ß°Ý¦u½Ãµe§@ªº¨Ó¾ú" << endl;
+        cout << "\nä½ ç™¼ç¾æˆ¿é–“è£¡æœ‰ä¸€å¹…ç•«ï¼Œç•«ä¸­ä¼¼ä¹Žéš±è—è‘—æŸäº›ä¿¡æ¯ã€‚" << endl;
+        cout << "1. ä»”ç´°ç ”ç©¶ç•«ä½œ" << endl;
+        cout << "2. æª¢æŸ¥å…¶ä»–ç‰©å“" << endl;
+        cout << "3. è©¢å•å®ˆè¡›ç•«ä½œçš„ä¾†æ­·" << endl;
         cin >> choice;
         switch (choice) {
         case 1:
-            cout << "§A¥J²Ó¬ã¨sµe§@¡Aµo²{¤F¤@¨ÇÁôÂÃªº²Å¸¹¡C" << endl;
+            cout << "\nä½ ä»”ç´°ç ”ç©¶ç•«ä½œï¼Œç™¼ç¾äº†ä¸€äº›éš±è—çš„ç¬¦è™Ÿã€‚" << endl;
             Conclusion();
             return;
         case 2:
-            cout << "§AÀË¬d¨ä¥Lª««~¡A¦ý¨S¦³µo²{¨ä¥L¯S§OªºªF¦è¡C" << endl;
+            cout << "\nä½ æª¢æŸ¥å…¶ä»–ç‰©å“ï¼Œä½†æ²’æœ‰ç™¼ç¾å…¶ä»–ç‰¹åˆ¥çš„æ±è¥¿ã€‚" << endl;
             Conclusion();
             return;
         case 3:
-            cout << "§A¸ß°Ý¦u½Ãµe§@ªº¨Ó¾ú¡A¦ý¥L¦ü¥G¤£Ä@¦h»¡¡C" << endl;
+            cout << "\nä½ è©¢å•å®ˆè¡›ç•«ä½œçš„ä¾†æ­·ï¼Œä½†ä»–ä¼¼ä¹Žä¸é¡˜å¤šèªªã€‚" << endl;
             Conclusion();
             return;
         default:
-            cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+            cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
             cin >> choice;
             HandlePeopleSubChoice(choice);
             return;
         }
         break;
     default:
-        cout << "¿ù»~ªº¿ï¶µ¡A½Ð­«·s¿é¤J" << endl;
+        cout << "éŒ¯èª¤çš„é¸é …ï¼Œè«‹é‡æ–°è¼¸å…¥" << endl;
         cin >> choice;
         HandlePeopleSubChoice(choice);
         break;
@@ -467,8 +467,9 @@ void Opening::HandlePeopleSubChoice(int choice) {
 }
 
 void Opening::Conclusion() {
-    cout << "§A¦bÉÜ¶é¤¤ªº«_ÀIµ²§ô¤F¡C" << endl;
-    cout << "§AÀò±o¤F¡G" << treasureItem << endl;
-    cout << "·PÁÂ§A¹Cª±³o­Ó¹CÀ¸¡I" << endl;
+    cout << "\nä½ åœ¨åº„åœ’ä¸­çš„å†’éšªçµæŸäº†ã€‚" << endl;
+    cout << "ä½ ç²å¾—äº†ï¼š" << treasureItem << endl;
+    cout << "æ„Ÿè¬ä½ éŠçŽ©é€™å€‹éŠæˆ²ï¼" << endl;
+    system("pause");
     exit(0);
 }
