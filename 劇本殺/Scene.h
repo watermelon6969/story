@@ -11,9 +11,9 @@ private:
     string name;
 
 public:
-    Scene(const string& name);
+    Scene(const string&);
     string getName() const;
-    void SceneZ(int choice);
+    void SceneZ(int);
     void SceneHouse();
     void SceneOut();
     void ScenePeople();
